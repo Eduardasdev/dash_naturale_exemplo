@@ -100,7 +100,7 @@ export const StageForm = ({ isLoading }: Props) => {
           </Form.Item>
         </Space>
         <Form.Item noStyle name="completed" valuePropName="checked">
-          <Checkbox>Mark as complete</Checkbox>
+          <Checkbox>Marcar como concluído</Checkbox>
         </Form.Item>
       </Form>
     </div>

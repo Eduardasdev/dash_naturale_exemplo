@@ -83,7 +83,7 @@ export const AccountSettings = ({ opened, setOpened, userId }: Props) => {
           backgroundColor: "#fff",
         }}
       >
-        <Text strong>Account Settings</Text>
+        <Text strong>Ajustes de Conta</Text>
         <Button
           type="text"
           icon={<CloseOutlined />}
@@ -107,16 +107,16 @@ export const AccountSettings = ({ opened, setOpened, userId }: Props) => {
                 marginBottom: "24px",
               }}
             />
-            <Form.Item label="Name" name="name">
+            <Form.Item label="Nome" name="name">
               <Input placeholder="Name" />
             </Form.Item>
             <Form.Item label="Email" name="email">
               <Input placeholder="email" />
             </Form.Item>
-            <Form.Item label="Job title" name="jobTitle">
+            <Form.Item label="Cargo" name="jobTitle">
               <Input placeholder="jobTitle" />
             </Form.Item>
-            <Form.Item label="Phone" name="phone">
+            <Form.Item label="Número" name="phone">
               <Input placeholder="Timezone" />
             </Form.Item>
           </Form>

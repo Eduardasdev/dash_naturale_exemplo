@@ -50,10 +50,21 @@ export const ContactStatusTag = ({ status }: Props) => {
     default:
       break;
   }
+  const statusLabel = {
+    NEW: "Novo",
+    CONTACTED: "Contactado",
+    INTERESTED: "Interessado",
+    UNQUALIFIED: "Não Qualificado",
+    QUALIFIED: "Qualificado",
+    NEGOTIATION: "Negociação",
+    LOST: "Perdido",
+    WON: "Alcançado",
+    CHURNED: "Desistência",
+  };
 
   return (
     <Tag color={color} style={{ textTransform: "capitalize" }}>
-      {icon} {status.toLowerCase()}
+      {icon} {statusLabel[status]}
     </Tag>
   );
 };

@@ -73,12 +73,12 @@ export const CompanyContactsTable = () => {
       title={
         <Space size="middle">
           <TeamOutlined />
-          <Text>Contacts</Text>
+          <Text>contatos</Text>
         </Space>
       }
       extra={
         <>
-          <Text className="tertiary">Total contacts: </Text>
+          <Text className="tertiary">Total de contatos: </Text>
           <Text strong>
             {tableProps?.pagination !== false && tableProps.pagination?.total}
           </Text>
@@ -94,7 +94,7 @@ export const CompanyContactsTable = () => {
         }}
       >
         <Table.Column<Contact>
-          title="Name"
+          title="Nome"
           dataIndex="name"
           render={(_, record) => {
             return (
@@ -113,22 +113,22 @@ export const CompanyContactsTable = () => {
           filterIcon={<SearchOutlined />}
           filterDropdown={(props) => (
             <FilterDropdown {...props}>
-              <Input placeholder="Search Name" />
+              <Input placeholder="Buscar Nome" />
             </FilterDropdown>
           )}
         />
         <Table.Column
-          title="Title"
+          title="Titulo"
           dataIndex="jobTitle"
           filterIcon={<SearchOutlined />}
           filterDropdown={(props) => (
             <FilterDropdown {...props}>
-              <Input placeholder="Search Title" />
+              <Input placeholder="Buscar titulo" />
             </FilterDropdown>
           )}
         />
         <Table.Column<Contact>
-          title="Stage"
+          title="Estágio"
           dataIndex="status"
           render={(_, record) => {
             return <ContactStatusTag status={record.status} />;
@@ -138,7 +138,7 @@ export const CompanyContactsTable = () => {
               <Select
                 style={{ width: "200px" }}
                 mode="multiple"
-                placeholder="Select Stage"
+                placeholder="Selecione estágio"
                 options={statusOptions}
               />
             </FilterDropdown>
@@ -174,39 +174,39 @@ const statusOptions: {
   value: Contact["status"];
 }[] = [
   {
-    label: "New",
+    label: "Novo",
     value: "NEW",
   },
   {
-    label: "Qualified",
+    label: "Qualificado",
     value: "QUALIFIED",
   },
   {
-    label: "Unqualified",
+    label: "Não Qualificado",
     value: "UNQUALIFIED",
   },
   {
-    label: "Won",
+    label: "Alcançado",
     value: "WON",
   },
   {
-    label: "Negotiation",
+    label: "Negociação",
     value: "NEGOTIATION",
   },
   {
-    label: "Lost",
+    label: "Perdido",
     value: "LOST",
   },
   {
-    label: "Interested",
+    label: "Interessado",
     value: "INTERESTED",
   },
   {
-    label: "Contacted",
+    label: "Contatado ",
     value: "CONTACTED",
   },
   {
-    label: "Churned",
+    label: "Desistência",
     value: "CHURNED",
   },
 ];

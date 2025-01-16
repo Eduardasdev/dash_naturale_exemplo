@@ -100,12 +100,12 @@ export const CompanyListPage = ({ children }: React.PropsWithChildren) => {
         >
           <Table.Column<Company>
             dataIndex="name"
-            title="Company title"
+            title="Empresa"
             defaultFilteredValue={getDefaultFilter("id", filters)}
             filterIcon={<SearchOutlined />}
             filterDropdown={(props) => (
               <FilterDropdown {...props}>
-                <Input placeholder="Search Company" />
+                <Input placeholder="Buscar empresa" />
               </FilterDropdown>
             )}
             render={(_, record) => {
@@ -129,7 +129,7 @@ export const CompanyListPage = ({ children }: React.PropsWithChildren) => {
           />
           <Table.Column<Company>
             dataIndex={"totalRevenue"}
-            title="Open deals amount"
+            title="Montante de Negociações Ativas"
             render={(_, company) => {
               return (
                 <Text>
@@ -141,7 +141,7 @@ export const CompanyListPage = ({ children }: React.PropsWithChildren) => {
           <Table.Column<Company>
             fixed="right"
             dataIndex="id"
-            title="Actions"
+            title="Ações"
             render={(value) => (
               <Space>
                 <EditButton hideText size="small" recordItemId={value} />

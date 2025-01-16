@@ -55,7 +55,7 @@ export const TasksEditPage = () => {
             list("tasks", "replace");
           }}
         >
-          Delete card
+          Apagar cartão
         </DeleteButton>
       }
     >
@@ -67,7 +67,7 @@ export const TasksEditPage = () => {
         fallback={<DescriptionHeader description={description} />}
         isLoading={isLoading}
         icon={<AlignLeftOutlined />}
-        label="Description"
+        label="Descrição"
       >
         <DescriptionForm
           initialValues={{ description }}
@@ -81,7 +81,7 @@ export const TasksEditPage = () => {
         fallback={<DueDateHeader dueData={dueDate} />}
         isLoading={isLoading}
         icon={<FieldTimeOutlined />}
-        label="Due date"
+        label="Prazo de entrega"
       >
         <DueDateForm
           initialValues={{ dueDate: dueDate ?? undefined }}
@@ -95,7 +95,7 @@ export const TasksEditPage = () => {
         fallback={<UsersHeader users={users} />}
         isLoading={isLoading}
         icon={<UsergroupAddOutlined />}
-        label="Users"
+        label="Usuário"
       >
         <UsersForm
           initialValues={{

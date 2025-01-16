@@ -51,7 +51,7 @@ export const ProjectCard = ({
   const dropdownItems = useMemo(() => {
     const dropdownItems: MenuProps["items"] = [
       {
-        label: "View card",
+        label: "Exibir cartão",
         key: "1",
         icon: <EyeOutlined />,
         onClick: () => {
@@ -60,7 +60,7 @@ export const ProjectCard = ({
       },
       {
         danger: true,
-        label: "Delete card",
+        label: "Deletar cartão",
         key: "2",
         icon: <DeleteOutlined />,
         onClick: () => {

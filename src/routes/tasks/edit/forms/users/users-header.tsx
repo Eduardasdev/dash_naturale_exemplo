@@ -18,5 +18,5 @@ export const UsersHeader = ({ users = [] }: Props) => {
     );
   }
 
-  return <Typography.Link>Assign to users</Typography.Link>;
+  return <Typography.Link>Delegar aos usuários</Typography.Link>;
 };

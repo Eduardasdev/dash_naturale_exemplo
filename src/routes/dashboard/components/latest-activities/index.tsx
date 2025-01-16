@@ -73,6 +73,19 @@ export const DashboardLatestActivities = ({ limit = 5 }: Props) => {
     return null;
   }
 
+  const stageTranslation = {
+    NEW: "Novo",
+    CONTACTED: "Contactado",
+    INTERESTED: "Interessado",
+    UNQUALIFIED: "Não qualificado",
+    QUALIFIED: "Qualificado",
+    NEGOTIATION: "Negociação",
+    LOST: "Perdido",
+    WON: "Ganho",
+    CHURNED: "Cancelado",
+    
+  };
+
   const isLoading = isLoadingAudit || isLoadingDeals;
 
   return (
@@ -91,7 +104,7 @@ export const DashboardLatestActivities = ({ limit = 5 }: Props) => {
         >
           <UnorderedListOutlined />
           <Text size="sm" style={{ marginLeft: ".5rem" }}>
-            Latest activities
+            Últimas atividades
           </Text>
         </div>
       }
@@ -146,6 +159,7 @@ export const DashboardLatestActivities = ({ limit = 5 }: Props) => {
             const deal =
               deals?.data.find((deal) => deal.id === `${item.targetId}`) ||
               undefined;
+        
 
             return (
               <List.Item>
@@ -163,12 +177,12 @@ export const DashboardLatestActivities = ({ limit = 5 }: Props) => {
                     <Space size={4}>
                       <Text strong>{item.user?.name}</Text>
                       <Text>
-                        {item.action === "CREATE" ? "created" : "moved"}
+                        {item.action === "CREATE" ? "criou " : "moveu"}
                       </Text>
+                      <Text> o negócio</Text>
                       <Text strong>{deal?.title}</Text>
-                      <Text>deal</Text>
-                      <Text>{item.action === "CREATE" ? "in" : "to"}</Text>
-                      <Text strong>{deal?.stage?.title || "Unassigned"}.</Text>
+                      <Text>{item.action === "CREATE" ? "como" : "to"}</Text>
+                      <Text strong>{stageTranslation[deal?.stage?.title ] || deal?.stage?.title || "Desconhecido"}</Text>
                     </Space>
                   }
                 />

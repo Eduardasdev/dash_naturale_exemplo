@@ -55,10 +55,10 @@ export const DescriptionForm = ({ initialValues, cancelForm }: Props) => {
       >
         <Space>
           <Button type="default" onClick={cancelForm}>
-            Cancel
+            cancelar
           </Button>
           <Button {...saveButtonProps} type="primary">
-            Save
+            salvar
           </Button>
         </Space>
       </div>

@@ -22,7 +22,7 @@ export const resources: IResourceItem[] = [
     create: "/companies/new",
     edit: "/companies/edit/:id",
     meta: {
-      label: "Companies",
+      label: "Empresas",
       icon: <ShopOutlined />,
     },
   },
@@ -32,7 +32,7 @@ export const resources: IResourceItem[] = [
     create: "/tasks/new",
     edit: "/tasks/edit/:id",
     meta: {
-      label: "Tasks",
+      label: "Tarefas",
       icon: <ProjectOutlined />,
     },
   },

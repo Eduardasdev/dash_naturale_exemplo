@@ -60,7 +60,7 @@ export const DashboardDealsChart = () => {
       return { fill: datum.state === "Won" ? won : lost };
     },
     color: (datum) => {
-      return datum.state === "Won" ? "#52C41A" : "#F5222D";
+      return datum.state === "Ganhos" ? "#52C41A" : "#F5222D";
     },
   };
 
@@ -79,7 +79,7 @@ export const DashboardDealsChart = () => {
         >
           <DollarOutlined />
           <Text size="sm" style={{ marginLeft: ".5rem" }}>
-            Deals
+            Negócios
           </Text>
         </div>
       }

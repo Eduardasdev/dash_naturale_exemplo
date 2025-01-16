@@ -25,7 +25,7 @@ export const TasksCreatePage = () => {
         close();
         list("tasks", "replace");
       }}
-      title="Add new card"
+      title="Criar novo cartão"
       width={512}
     >
       <Form
@@ -41,7 +41,7 @@ export const TasksCreatePage = () => {
           });
         }}
       >
-        <Form.Item label="Title" name="title" rules={[{ required: true }]}>
+        <Form.Item label="Nome" name="title" rules={[{ required: true }]}>
           <Input />
         </Form.Item>
       </Form>

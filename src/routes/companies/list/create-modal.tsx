@@ -62,24 +62,24 @@ export const CompanyCreateModal = () => {
       {...modalProps}
       mask={true}
       onCancel={goToListPage}
-      title="Add new company"
+      title="Adicionar nova empresa"
       width={512}
     >
       <Form {...formProps} layout="vertical">
         <Form.Item
-          label="Company name"
+          label="Nome da empresa"
           name="name"
           rules={[{ required: true }]}
         >
-          <Input placeholder="Please enter company name" />
+          <Input placeholder="Adcione o nome da empresa" />
         </Form.Item>
         <Form.Item
-          label="Sales owner"
+          label="Líder de Vendas"
           name="salesOwnerId"
           rules={[{ required: true }]}
         >
           <Select
-            placeholder="Please sales owner user"
+            placeholder="Usuário Líder de Vendas"
             {...selectProps}
             options={
               queryResult.data?.data?.map((user) => ({

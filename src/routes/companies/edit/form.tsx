@@ -73,7 +73,7 @@ export const CompanyForm = () => {
           }}
         />
         <Form.Item
-          label="Sales owner"
+          label="Líder de Vendas"
           name="salesOwnerId"
           initialValue={formProps?.initialValues?.salesOwner?.id}
         >
@@ -92,10 +92,10 @@ export const CompanyForm = () => {
             }
           />
         </Form.Item>
-        <Form.Item label="Company size" name="companySize">
+        <Form.Item label="Dimensão da Empresa" name="companySize">
           <Select options={companySizeOptions} />
         </Form.Item>
-        <Form.Item label="Total revenue" name="totalRevenue">
+        <Form.Item label="Faturamento Total" name="totalRevenue">
           <InputNumber
             autoFocus
             addonBefore={"$"}
@@ -106,13 +106,13 @@ export const CompanyForm = () => {
             }
           />
         </Form.Item>
-        <Form.Item label="Industry" name="industry">
+        <Form.Item label="Indústria" name="industry">
           <Select options={industryOptions} />
         </Form.Item>
-        <Form.Item label="Business type" name="businessType">
+        <Form.Item label="Categoria de Negócio" name="businessType">
           <Select options={businessTypeOptions} />
         </Form.Item>
-        <Form.Item label="Country" name="country">
+        <Form.Item label="País" name="country">
           <Input placeholder="Country" />
         </Form.Item>
         <Form.Item label="Website" name="website">
@@ -128,19 +128,19 @@ const companySizeOptions: {
   value: CompanySize;
 }[] = [
   {
-    label: "Enterprise",
+    label: "Multinacional",
     value: "ENTERPRISE",
   },
   {
-    label: "Large",
+    label: "Grande porte",
     value: "LARGE",
   },
   {
-    label: "Medium",
+    label: "Médio porte",
     value: "MEDIUM",
   },
   {
-    label: "Small",
+    label: "Pequeno porte",
     value: "SMALL",
   },
 ];
@@ -149,35 +149,35 @@ const industryOptions: {
   label: string;
   value: Industry;
 }[] = [
-  { label: "Aerospace", value: "AEROSPACE" },
-  { label: "Agriculture", value: "AGRICULTURE" },
-  { label: "Automotive", value: "AUTOMOTIVE" },
-  { label: "Chemicals", value: "CHEMICALS" },
-  { label: "Construction", value: "CONSTRUCTION" },
-  { label: "Defense", value: "DEFENSE" },
-  { label: "Education", value: "EDUCATION" },
-  { label: "Energy", value: "ENERGY" },
-  { label: "Financial Services", value: "FINANCIAL_SERVICES" },
-  { label: "Food and Beverage", value: "FOOD_AND_BEVERAGE" },
-  { label: "Government", value: "GOVERNMENT" },
-  { label: "Healthcare", value: "HEALTHCARE" },
-  { label: "Hospitality", value: "HOSPITALITY" },
-  { label: "Industrial Manufacturing", value: "INDUSTRIAL_MANUFACTURING" },
-  { label: "Insurance", value: "INSURANCE" },
-  { label: "Life Sciences", value: "LIFE_SCIENCES" },
-  { label: "Logistics", value: "LOGISTICS" },
-  { label: "Media", value: "MEDIA" },
-  { label: "Mining", value: "MINING" },
-  { label: "Nonprofit", value: "NONPROFIT" },
-  { label: "Other", value: "OTHER" },
-  { label: "Pharmaceuticals", value: "PHARMACEUTICALS" },
-  { label: "Professional Services", value: "PROFESSIONAL_SERVICES" },
-  { label: "Real Estate", value: "REAL_ESTATE" },
-  { label: "Retail", value: "RETAIL" },
-  { label: "Technology", value: "TECHNOLOGY" },
-  { label: "Telecommunications", value: "TELECOMMUNICATIONS" },
-  { label: "Transportation", value: "TRANSPORTATION" },
-  { label: "Utilities", value: "UTILITIES" },
+  { label: "Aeroespacial", value: "AEROSPACE" },
+  { label: "Agricultura", value: "AGRICULTURE" },
+  { label: "Automotivo", value: "AUTOMOTIVE" },
+  { label: "Químicos", value: "CHEMICALS" },
+  { label: "Construção", value: "CONSTRUCTION" },
+  { label: "Defesa", value: "DEFENSE" },
+  { label: "Educação", value: "EDUCATION" },
+  { label: "Energia", value: "ENERGY" },
+  { label: "Serviços Financeiros", value: "FINANCIAL_SERVICES" },
+  { label: "Alimentos e Bebidas", value: "FOOD_AND_BEVERAGE" },
+  { label: "Governo", value: "GOVERNMENT" },
+  { label: "Saúde", value: "HEALTHCARE" },
+  { label: "Hospitalidade", value: "HOSPITALITY" },
+  { label: "Manufatura Industrial", value: "INDUSTRIAL_MANUFACTURING" },
+  { label: "Seguros", value: "INSURANCE" },
+  { label: "Ciências da Vida", value: "LIFE_SCIENCES" },
+  { label: "Logística", value: "LOGISTICS" },
+  { label: "Mídia", value: "MEDIA" },
+  { label: "Mineração", value: "MINING" },
+  { label: "Sem Fins Lucrativos", value: "NONPROFIT" },
+  { label: "Outro", value: "OTHER" },
+  { label: "Produtos Farmacêuticos", value: "PHARMACEUTICALS" },
+  { label: "Serviços Profissionais", value: "PROFESSIONAL_SERVICES" },
+  { label: "Imobiliário", value: "REAL_ESTATE" },
+  { label: "Varejo", value: "RETAIL" },
+  { label: "Tecnologia", value: "TECHNOLOGY" },
+  { label: "Telecomunicações", value: "TELECOMMUNICATIONS" },
+  { label: "Transporte", value: "TRANSPORTATION" },
+  { label: "Utilidades", value: "UTILITIES" },
 ];
 
 const businessTypeOptions: {

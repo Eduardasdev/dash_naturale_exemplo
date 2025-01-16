@@ -46,7 +46,7 @@ export const CurrentUser = () => {
           block
           onClick={() => setOpened(true)}
         >
-          Account settings
+          Ajustes de conta
         </Button>
       </div>
     </div>

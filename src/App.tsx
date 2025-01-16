@@ -90,7 +90,7 @@ const App = () => {
                       key="authenticated-auth"
                       fallback={<Outlet />}
                     >
-                      <NavigateToResource resource="dashboard" />
+                      <NavigateToResource resource="dash" />
                     </Authenticated>
                   }
                 >

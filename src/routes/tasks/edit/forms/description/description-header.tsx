@@ -17,5 +17,5 @@ export const DescriptionHeader = ({ description }: Props) => {
     );
   }
 
-  return <Typography.Link>Add task description</Typography.Link>;
+  return <Typography.Link>Inserir detalhes da tarefa</Typography.Link>;
 };

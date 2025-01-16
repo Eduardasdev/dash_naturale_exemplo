@@ -67,10 +67,10 @@ export const DueDateForm = ({ initialValues, cancelForm }: Props) => {
       </Form>
       <Space>
         <Button type="default" onClick={cancelForm}>
-          Cancel
+          cancelar
         </Button>
         <Button {...saveButtonProps} type="primary">
-          Save
+          salvar
         </Button>
       </Space>
     </div>

@@ -34,5 +34,5 @@ export const DueDateHeader = ({ dueData }: Props) => {
     );
   }
 
-  return <Typography.Link>Add due date</Typography.Link>;
+  return <Typography.Link>Definir prazo final</Typography.Link>;
 };

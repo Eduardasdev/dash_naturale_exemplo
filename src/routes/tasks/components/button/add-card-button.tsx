@@ -25,7 +25,7 @@ export const KanbanAddCardButton = ({
     >
       {children ?? (
         <Text size="md" type="secondary">
-          Add new card
+          Criar novo cartão
         </Text>
       )}
     </Button>
