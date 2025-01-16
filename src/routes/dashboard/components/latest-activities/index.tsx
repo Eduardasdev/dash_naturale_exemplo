@@ -72,7 +72,7 @@ export const DashboardLatestActivities = ({ limit = 5 }: Props) => {
     console.error("Error fetching latest activities", error);
     return null;
   }
-
+  
   const stageTranslation = {
     NEW: "Novo",
     CONTACTED: "Contactado",
@@ -85,6 +85,7 @@ export const DashboardLatestActivities = ({ limit = 5 }: Props) => {
     CHURNED: "Cancelado",
     
   };
+
 
   const isLoading = isLoadingAudit || isLoadingDeals;
 
@@ -182,7 +183,7 @@ export const DashboardLatestActivities = ({ limit = 5 }: Props) => {
                       <Text> o negócio</Text>
                       <Text strong>{deal?.title}</Text>
                       <Text>{item.action === "CREATE" ? "como" : "to"}</Text>
-                      <Text strong>{stageTranslation[deal?.stage?.title ] || deal?.stage?.title || "Desconhecido"}</Text>
+                      <Text strong>{deal?.stage?.title || "defaultKey"}.</Text>
                     </Space>
                   }
                 />
