@@ -62,7 +62,7 @@ export const Accordion = ({
           }}
         >
           <Text strong onClick={toggleAccordion} style={{ cursor: "pointer" }}>
-            {label}
+            
           </Text>
           {children}
         </div>

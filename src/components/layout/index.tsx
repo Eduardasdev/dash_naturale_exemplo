@@ -10,7 +10,20 @@ export const Layout = ({ children }: React.PropsWithChildren) => {
       <ThemedLayoutV2
         Header={Header}
         Title={(titleProps) => {
-          return <ThemedTitleV2 {...titleProps} text="Refine" />;
+          return (
+            <div style={{ display: "flex", alignItems: "center" }}>
+              <img
+                src="/public/logo.png"
+                alt="Logo"
+                style={{
+                  width: "30px",
+                  height: "30px",
+                  marginRight: "8px",
+                }}
+              />
+              <span style={{ fontSize: "18px", fontWeight: "bold" }}>Naturalle</span>
+            </div>
+          );
         }}
       >
         {children}

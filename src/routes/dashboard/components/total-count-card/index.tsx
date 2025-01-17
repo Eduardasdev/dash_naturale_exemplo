@@ -162,7 +162,7 @@ const variants: {
         />
       </IconWrapper>
     ),
-    title: "Número de empresas",
+    title: "Empresas",
     data: [
       {
         index: "1",
@@ -199,7 +199,7 @@ const variants: {
         />
       </IconWrapper>
     ),
-    title: "Número de contatos",
+    title: "Contatos",
     data: [
       {
         index: "1",
@@ -240,7 +240,7 @@ const variants: {
         />
       </IconWrapper>
     ),
-    title: "Total de negócios no funil",
+    title: "Total de Negócios",
     data: [
       {
         index: "1",

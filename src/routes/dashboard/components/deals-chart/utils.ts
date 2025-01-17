@@ -47,7 +47,7 @@ export const mapDealsData = (
 
   const lost = dealStages.find((stage) => stage.title === "LOST");
 
-  const lostDeals = mapDeals(lost?.dealsAggregate, "Gastos");
+  const lostDeals = mapDeals(lost?.dealsAggregate, "Perdidos");
 
   return [...wonDeals, ...lostDeals].sort((a, b) => a.timeUnix - b.timeUnix);
 };

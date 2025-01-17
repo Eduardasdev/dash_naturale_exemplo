@@ -55,7 +55,7 @@ export const CalendarUpcomingEvents = () => {
         >
           <CalendarOutlined />
           <Text size="sm" style={{ marginLeft: ".7rem" }}>
-            Próximos eventos
+            Próximas Tarefas
           </Text>
         </div>
       }

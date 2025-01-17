@@ -6,12 +6,26 @@ export const LoginPage = () => {
   return (
     <AuthPage
       type="login"
-      registerLink={false}
+      registerLink={true}
       forgotPasswordLink={false}
-      title={<ThemedTitleV2 collapsed={false} text="Adzera" />}
+      title={
+        <div style={{ display: "flex", alignItems: "center" }}>
+          <img
+            src="/public/logo.png"
+            alt="Logo"
+            style={{
+              width: "30px",
+              height: "30px",
+              marginRight: "8px",
+            }}
+          />
+          <span style={{ fontSize: "18px", fontWeight: "bold" }}>naturalle</span>
+        </div>
+      }
       formProps={{
         initialValues: authCredentials,
       }}
     />
   );
 };
+

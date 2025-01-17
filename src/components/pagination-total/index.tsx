@@ -13,7 +13,7 @@ export const PaginationTotal = ({
         marginLeft: "16px",
       }}
     >
-      <span className="ant-text secondary">{total}</span> {entityName} in total
+      <span className="ant-text secondary">{total}</span> {entityName} no total
     </span>
   );
 };

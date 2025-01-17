@@ -39,21 +39,36 @@ export const DashboardDealsChart = () => {
       offsetY: -6,
     },
     yAxis: {
-      tickCount: 4,
+      tickCount: 6,
       label: {
         formatter: (v) => {
-          return `$${Number(v) / 1000}k`;
+          return `R$${Number(v) / 1000}k`;
         },
       },
     },
+      xAxis: {
+    label: {
+      formatter: (value) => {
+        // Aqui você pode formatar ou modificar os rótulos do eixo X
+        return `${value}`; // Exemplo: apenas retornar o valor original
+      },
+    },
+    tickCount: 6,  // Define o número de ticks no eixo X
+    title: {
+      text: "Data",  // Adiciona um título ao eixo X
+    },
+    type: 'time',  // Se você estiver trabalhando com datas, pode usar "time"
+    range: [0.01, 1],  // Ajusta o intervalo de exibição no eixo X
+  },
     tooltip: {
       formatter: (data) => {
         return {
           name: data.state,
-          value: `$${Number(data.value) / 1000}k`,
+          value: `R$${Number(data.value) / 1000}k`,
         };
       },
     },
+    
     areaStyle: (datum) => {
       const won = "l(270) 0:#ffffff 0.5:#b7eb8f 1:#52c41a";
       const lost = "l(270) 0:#ffffff 0.5:#f3b7c2 1:#ff4d4f";
