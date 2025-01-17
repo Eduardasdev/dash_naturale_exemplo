@@ -13,7 +13,7 @@ export const Layout = ({ children }: React.PropsWithChildren) => {
           return (
             <div style={{ display: "flex", alignItems: "center" }}>
               <img
-                src="/public/logo.png"
+                src="/logo.png"
                 alt="Logo"
                 style={{
                   width: "30px",
